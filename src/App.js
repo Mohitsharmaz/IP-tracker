@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import styles from "./index.css";
 import Home from "./pages/Home";
-import { Route, RouterProvider, Routes, createBrowserRouter } from "react-router-dom";
+import { Route, RouterProvider, Routes, createHashRouter } from "react-router-dom";
 
 function App() {
-  let route = createBrowserRouter([
+  let route = createHashRouter([
     {
       path:"/", 
       Component:<Home />
